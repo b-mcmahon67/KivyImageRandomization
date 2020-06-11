@@ -1,0 +1,21 @@
+<RootLayout>:
+	WindowManager:
+		ImageScreen:
+			name: "Image Processing"
+
+			GridLayout:
+				rows: 1
+				Image:
+					id: generatedimage
+					source: app.imagefile
+					allow_stretch: True
+
+				GridLayout:
+					cols: 1
+
+					Button:
+						id: select
+						text: "Generate an Image"
+						on_release:
+							app.selectImage()
+							app.selectImage()
